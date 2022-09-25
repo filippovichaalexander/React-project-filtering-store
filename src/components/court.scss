@@ -1,0 +1,74 @@
+
+@import '../styles.css';
+
+$backgroundColor: #f8f8f8;
+$borderColor: #d8d8d8;
+$labelBlue: #006f79;
+$labelOrange: #ec6608;
+
+ .court {
+     &__wrapper {
+       width: 379px;
+       height: auto;
+       background-color: $backgroundColor;
+       border: 1px solid $borderColor;
+       &:hover {
+         cursor: pointer;
+       }
+     }
+     &__img-wrapper {
+       background: url(https://via.placeholder.com/300x150/FF0000/FFFFFF?text=title)
+         no-repeat center / cover;
+       width: 100%;
+       height: 233px;
+       position: relative;
+     }
+     &__content {
+       padding: 15px 15px;
+     }
+     &__top-content {
+       line-height: 22px;
+     }
+     &__bottom-content {
+       padding-top: 15px;
+       line-height: 22px;
+     }
+     &__title {
+       font-size: 20px;
+       font-weight: 700;
+     }
+     &__address,
+     &__price {
+       font-size: 16px;
+       font-weight: 400;
+     }
+     &__price span {
+       font-weight: 700;
+     }
+     &__prop {
+       font-size: 14px;
+       font-weight: 400;
+     }
+ 
+     &__type::first-letter {
+       text-transform: capitalize;
+     }
+     &__type {
+       position: absolute;
+       right: 0;
+       bottom: 0;
+       padding: 8px;
+       color: #fff;
+       font-size: 12px;
+       font-weight: 700;
+       line-height: 1;
+     }
+     &__type-ind {
+       background-color: $labelBlue;
+     }
+     &__type-support {
+       background-color: $labelOrange;
+     }
+ 
+ } 
+ 

@@ -1,0 +1,52 @@
+.courts__wrapper {
+    width: 100%;
+    max-width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 22px;
+    row-gap: 38px;
+    flex-wrap: wrap;
+  }
+  .courts__link {
+    width: 30%;
+  }
+  @media  (max-width: 1280px)
+  {
+    .courts__link {
+      width: 48%;
+    } 
+  }
+  @media  (max-width: 880px)
+  {
+    .courts__link {
+      width: 100%;
+      max-width: 379px;
+      margin: 0 auto;
+    } 
+    .court__wrapper {
+      margin: 0 auto;
+      justify-content: center;
+      width: 100%;
+    }
+    .input__wrapper {
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+    }
+    .search {
+      width: calc(100% - 20px);
+      margin: 20px auto;
+      max-width: 500px;
+    }
+    .search__label {
+      margin-top: 20px;
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  
+  
+    
+   
