@@ -24,12 +24,13 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(png|jpe?g|gif)$/i,
         use: [
-          'url-loader?limit=10000',
-          'img-loader'
-        ]
-      }
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ]
   }
 };

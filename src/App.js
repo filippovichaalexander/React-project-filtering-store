@@ -4,6 +4,8 @@ import "./styles.css";
 import Courts from "./components/Courts";
 import axios from "axios";
 
+import Arrow from './assets/arrow.png';
+
 function App() {
   const [query, setQuery] = useState("");
   const [courts, setCourts] = useState([]);
@@ -50,7 +52,7 @@ function App() {
         <Courts courts={courts} />
         <button className="btn btn--more">
           See more
-          <img className="arrow1" src="./images/arrow.png" alt="arrow" />
+          <img className="arrow" src={Arrow} alt="arrow" />
         </button>
       </main>
     </Router>
