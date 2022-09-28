@@ -43,10 +43,10 @@ $borderColor:#d8d8d8;
     border: 1px solid $borderColor;
     width: 150px;
     border-radius: 25px;
-    color: red;
   
     &--more {
       display: flex;
+      width: 160px;
     }
   }
   .arrow {

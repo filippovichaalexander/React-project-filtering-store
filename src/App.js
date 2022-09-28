@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./styles.css";
+import "./styles.scss";
 import Courts from "./components/Courts";
 import axios from "axios";
 
