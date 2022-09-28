@@ -1,4 +1,4 @@
-require('file-loder?name[name].text!./index.html');
+// require('file-loader?name=[name].[ext]!.index.html');
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.css';
