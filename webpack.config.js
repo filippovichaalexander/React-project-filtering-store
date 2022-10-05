@@ -6,14 +6,14 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: "build", to: "dist" },
-        { from: "public", to: "dist" },
+        { from: "public", to: "./" },
       ],
     }),
   ],
   mode: "development",
   entry: "./src/index.js",
   output: {
-    path: path.join(__dirname, "/dist"),
+    path: path.join(__dirname, "/build"),
     filename: "index.bundle.js"
   },
   devServer: {
