@@ -5,7 +5,6 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: "build", to: "../dist" },
         { from: "public", to: "./" },
       ],
     }),
